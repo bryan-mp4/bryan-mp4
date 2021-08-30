@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'cairo';
+    src: url(../font/Cairo-Regular.ttf);
+}
+*{
+    font-family: 'cairo', 'Verdana';
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header" "header" "header"
+    "main" "main" "main"
+    "footer" "footer" "footer"
+    ;
+}
+#banner{
+    width: 98%;
+    padding: 10px;
+    margin: 1px 1px 1px 1px;
+}
+body{
+    margin: 0;
+    background-color: rgb(216, 214, 231);
+}
+header{
+    background-color: #257AB8;
+    margin: 10px;
+    grid-area: "header";
+}
+main{
+    grid-area: "main";
+    background-color: whitesmoke;
+    margin: 10px;
+    border: 2px solid transparent;
+}
+footer{
+    grid-area: "footer";
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu a{
+    display: block;
+    color: #FFF;
+    padding: 20px;
+    text-decoration: none;
+    font-family: "cairo";
+    margin: 3px;
+}
+.menu a:hover{
+    background-color: #aaaac0;
+    font-size: 20px;
+}
+.menu ul li ul{
+    display: none;
+}
+.menu li:hover ul{
+    display: block;
+}
+#carrito{
+    width:50px;    
+}
+.contenedor-imagen{
+    background-color: #5d63ab;
+    padding: 20px;
+}
+.jpg{
+    width: 200px;
+}
+.png{
+    width: 200px;
+}
+.gif{
+    height: 100px;
+}
+h2{
+    text-shadow: 4px 4px 6px #000;
+}
+.sombra-jpg{
+    width: 200px;
+    box-shadow: 3px 3px 3px rgb(24, 24, 26);
+    
+}
+.sombra-png{
+    width: 200px;
+    filter: drop-shadow(5px 5px 10px #444);
+}
+.division-sombra{
+    width: 60%;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 3px 3px 3px #c1c1c1;
+}
+.redes img{
+    height: 40px;
+}
+.redes{
+    margin-top: 20px;
+}
+.redes a{
+    text-decoration: none;
+}
+.redes a:hover img{
+    box-shadow: 0px 0px 6px #000; 
+}
+.image-header{
+    width: 20%;
+}
+.image-header img{
+    width: 50%;
+    display: inline-block;
+}
+.menu{
+    width: 80%;
+    display: inline-block;
+}
+.head-document{
+    display: flex;
+    padding: 10px;
+}
+main div p{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+main div h1{
+    padding: 10px;
+}*{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 100px;
+
+}
+form div input{
+    width: 99%;
+    height: 50px;
+    text-align: center;
+    font-size: 21px;
+}
+form div p{
+    font-size: 20px;
+    margin: 10px;
+}
+form div select{
+    height: 50px;
+    width: 99%;
+}
+form div .botones{
+    width: 40%;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.productos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /*grid-template-rows: 600px 600px 600px 600px 600px;*/
+    grid-template-rows: 100% 100% 100%;
+}
+#html-course{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(219, 218, 245);
+    color:rgb(0, 9, 26);
+    padding: 5px;
+    margin: 5px;
+}
+#html-course img{
+    width: 50%;
+    padding: 10px;    
+}
+#html-course button{
+   padding: 10px;
+    font-size: 20px;
+} 
+
+#js-course{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(219, 218, 245);
+    color:rgb(0, 9, 26);
+    padding: 5px;
+    margin: 5px;
+}
+#js-course img{
+    width: 70%;
+    padding: 10px;
+}
+#js-course button{
+    padding: 10px;
+     font-size: 20px;
+     
+ } 
+#c1-course{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(219, 218, 245);
+    color:rgb(0, 9, 26);
+    padding: 5px;
+    margin: 5px;
+}
+#c1-course img{
+    width: 50%;
+    padding: 10px;
+}
+#c1-course button{
+    padding: 10px;
+     font-size: 20px;
+
+ } 
+#java-course{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(219, 218, 245);
+    color:rgb(0, 9, 26);
+    padding: 5px;
+    margin: 5px;
+}
+#java-course img{
+    width: 50%;
+    padding: 10px;
+}
+#java-course button{
+    padding: 10px;
+     font-size: 20px;
+    
+} 
+
+@media (max-width: 700px){
+    form div .botones{
+        width: 40%;
+        margin-left: 15px; 
+        margin-right: 15px; 
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    form{
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(210, 226, 236);
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: 95%;
+        grid-template-rows: 700px 700px 700px 700px 700px;
+        /*height: 100%;*/
+    }
+    #html-course{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        background-color: rgb(219, 218, 245);
+        color:rgb(0, 9, 26);
+        padding: 5px;
+        margin: 5px;
+    }
+    #js-course{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: rgb(219, 218, 245);
+        color:rgb(0, 9, 26);
+        padding: 5px;
+        margin: 5px;
+    }
+    #js-course{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        background-color: rgb(219, 218, 245);
+        color:rgb(0, 9, 26);
+        padding: 5px;
+        margin: 5px;
+    }
+    #c1-course{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        background-color: rgb(219, 218, 245);
+        color:rgb(0, 9, 26);
+        padding: 5px;
+        margin: 5px;
+    }
+    #java-course{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        background-color: rgb(219, 218, 245);
+        color:rgb(0, 9, 26);
+        padding: 5px;
+        margin: 5px;
+    }
+}
